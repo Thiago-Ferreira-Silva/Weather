@@ -1,8 +1,6 @@
 navigator.geolocation.getCurrentPosition(requestWeather)
 
-const key = '42f40aad8df2409ea0810308200807'
 //const key = /* use your key from weather api */
-
 
 function requestWeather(position) {
     position = position.coords
