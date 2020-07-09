@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             Weather
         </div>
         <div class="main">
-            <div id="text"></div>
-            <img src="" id="icon">
-            <div id="temp_c"></div>
-            <div id="temp_f"></div>
-            <div id="humidity"></div>
+            <div class="weather_name">
+                <img src="" id="icon">
+                <div id="text"></div>
+            </div>
+            <div class="weather_condition">
+                <div class="temperature">Temperature</div>
+                <div id="temp_c"></div>
+                <div id="temp_f"></div>
+                <div class="humidity">Humidity</div>
+                <div id="humidity"></div>
+            </div>
             <div id="position"></div>
         </div>
         <div class="footer">
             <span>Powered by </span>
-            <a href="https://www.weatherapi.com/" title="Free Weather API"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com"></a>
+            <a href="https://www.weatherapi.com/" title="Free Weather API"><img
+                    src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com"></a>
         </div>
     </div>
     <script src="./app.js"></script>
 </body>
+
 </html>

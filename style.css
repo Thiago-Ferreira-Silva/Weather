@@ -29,6 +29,22 @@ body {
     justify-content: center;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather_name {
+    display: inline-block;
+    margin: 30px;
+}
+.weather_condition {
+    display: flex;
+    margin-bottom: 30px;
+}
+
 .footer {
     background-color: #e9e9e9;
     padding: 10px;
@@ -41,4 +57,17 @@ body {
 
 .footer span {
     margin-right: 5px;
+}
+
+#text {
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+#icon {
+    height: 65px;
+}
+
+#temp_c , #temp_f , #humidity , #position {
+    color: whitesmoke;
 }

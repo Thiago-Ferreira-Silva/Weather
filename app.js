@@ -12,7 +12,6 @@ function requestWeather(position) {
     request.send()
     request.onload = () => {
         const weather = request.response
-        console.log(weather)
         mountPage(weather)
     }
 }
