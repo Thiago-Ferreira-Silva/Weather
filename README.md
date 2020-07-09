@@ -1,0 +1,1 @@
+# Simple weather website using [Weather Api](https://www.weatherapi.com/)
