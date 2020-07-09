@@ -13,6 +13,7 @@ function requestWeather(position) {
     request.onload = () => {
         const weather = request.response
         console.log(weather)
+        mountPage(weather)
     }
 }
 
@@ -20,7 +21,14 @@ const text = document.getElementById('text')
 const icon = document.getElementById('icon')
 const tempC = document.getElementById('temp_c')
 const tempF = document.getElementById('temp_f')
-const feelslikeC = document.getElementById('feelslike_c')
-const feelslikeF = document.getElementById('feelslike_f')
 const humidity = document.getElementById('humidity')
-const location = document.getElementById('location')
+const position = document.getElementById('position')
+
+function mountPage(weather) {
+    text.innerText = weather.current.condition.text
+    icon.src = weather.current.condition.icon
+    tempC.innerText = weather.current.temp_c + '°C'
+    tempF.innerText = weather.current.temp_f + '°F'
+    humidity.innerText = weather.current.humidity + '%'
+    position.innerText = `${weather.location.name}, ${weather.location.region}, ${weather.location.country}`
+}
